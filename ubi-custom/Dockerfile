@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8:8.0
+FROM registry.access.redhat.com/ubi8/ubi:8.4-211
 
 RUN yum install -y iputils
 RUN yum install -y net-tools
