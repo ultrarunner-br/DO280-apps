@@ -4,6 +4,8 @@ RUN yum install -y \
   iputils \
   net-tools \
   && yum clean all
-RUN dnf install nmap
+RUN dnf install -y \
+  nmap \
+  && dnf clean all
 
 CMD ["/sbin/init"]
