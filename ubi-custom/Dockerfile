@@ -5,7 +5,8 @@ RUN yum install -y \
   tcpdump \
   net-tools \
   iperf3 \
-  && yum clean all \
-  && dnf install nmap
+  && yum clean all
+
+RUN dnf install nmap
 
 CMD ["/sbin/init"]
