@@ -6,6 +6,7 @@ RUN dnf install -y \
   bind-utils \
   ethtool \
   nmap \
+  procps-ng \
   && dnf clean all
 
 CMD ["/sbin/init"]
